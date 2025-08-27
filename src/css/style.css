@@ -1,0 +1,26 @@
+
+/*Parte da header*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.header-container{
+  background-color: #1682d4;
+  color: white;
+  width: 20px;
+  
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#nav a{
+    color: brown;
+}
