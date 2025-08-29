@@ -3,7 +3,7 @@ const inicialJogadoras = [
     nome: "Andressa Alves",
     posicao: "Meio-campo",
     clube: "Corinthians",
-    foto: "src/assets/AndressaAlves.jpg",
+    foto: "https://tse1.mm.bing.net/th/id/OIP.dO_6G1gyf-lKX6aTa6efgQHaE7?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3/",
     gols: 15,
     assistencias: 10,
     jogos: 28,
@@ -72,6 +72,7 @@ function getJogadoras() {
 }
 
 function salvarJogadoras(jogadoras) {
+  debugger;
   localStorage.setItem("jogadoras", JSON.stringify(jogadoras));
 }
 
