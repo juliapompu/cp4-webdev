@@ -5,8 +5,18 @@ body{
 #jogadora-form button{
   width: 80px;
   background-color: #93efff;
-  padding: 5;
   text-align: center;
+  background-color: rgb(76, 198, 255);
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+
 }
 
 
@@ -32,6 +42,7 @@ body{
 }
 
 .card .favorita {
+  width: 200px;
   color: gold;
   cursor: pointer;
 }
