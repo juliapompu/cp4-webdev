@@ -1,8 +1,14 @@
-
-input, button, select {
-  padding: 10px;
-  font-size: 16px;
+body{
+  background-color: whitesmoke;
 }
+
+#jogadora-form button{
+  width: 80px;
+  background-color: #93efff;
+  padding: 5;
+  text-align: center;
+}
+
 
 #jogadoras-container {
   display: flex;

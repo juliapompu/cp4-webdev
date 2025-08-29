@@ -3,9 +3,7 @@ const inicialJogadoras = [
     nome: "Andressa Alves",
     posicao: "Meio-campo",
     clube: "Corinthians",
-
-    foto: "https://example.com/andressa.jpg",
-
+    foto: "src/assets/AndressaAlves.jpg",
     gols: 15,
     assistencias: 10,
     jogos: 28,
@@ -15,7 +13,7 @@ const inicialJogadoras = [
     nome: "Dayana Rodríguez",
     posicao: "Meio-campo",
     clube: "Corinthians",
-    foto: "https://example.com/dayana.jpg",
+    foto: "src/assets/DayanaRodriguez.png",
     gols: 5,
     assistencias: 12,
     jogos: 30,
@@ -83,7 +81,7 @@ function renderJogadoras(filtro = "") {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
-      ${j.foto}
+      <img src=${j.foto}/>
       <h3>${j.nome}</h3>
       <p>${j.posicao} - ${j.clube}</p>
       <p>Gols: ${j.gols} | Assistências: ${j.assistencias} | Jogos: ${j.jogos}</p>
