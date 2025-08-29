@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rede Social- Tweeto</title>
-    <link rel="icon" href="src/assets/tweeto.jpg">
-    <link rel="stylesheets" href="src/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Jogadoras</title>
+  <link rel="icon" href="src/assets/tweeto.jpg">
+  <link rel="stylesheets" href="src/css/style.css">
 </head>
 <body>
-    <div class="logo"></div>
-    <div class="header-conteiner">
-        <header>
-            <nav>
-                <a href="src/pages/feed.html">feed</a>
-            </nav>
-        </header>
-    </div>
+    <header id="cabecario">
+        <h1>Jogadoras de Futebol Feminino</h1>
+    </header>
 
-    
+  <section id="form-section">
+    <h2>Cadastrar / Editar Jogadora</h2>
+    <form id="jogadora-form">
+      <input type="hidden" id="edit-index" />
+      <input type="text" id="nome" placeholder="Nome" required />
+      <input type="text" id="posicao" placeholder="Posição" required />
+      <input type="text" id="clube" placeholder="Clube" required />
+      <input type="number" id="gols" placeholder="Gols" required />
+      <input type="number" id="assistencias" placeholder="Assistências" required />
+      <input type="number" id="jogos" placeholder="Jogos" required />
+      <input type="url" id="foto" placeholder="URL da Foto" required />
+      <button type="submit">Salvar</button>
+    </form>
+  </section>
+  <BR>
+  <section id="filtros">
+    <input type="text" id="busca" placeholder="Buscar por nome ou posição..." />
+    <select id="filtro-clube">
+      <option value="">Todos os clubes</option>
+    </select>
+    <BR>
+    <button onclick="ordenarPor('nome')">Ordenar por Nome</button>
+    <button onclick="ordenarPor('posicao')">Ordenar por Posição</button>
+  </section>
 
+  <section id="jogadoras-container"></section>
 
-
-
-
-
-
-
-
-
-
-
-
+  <script src="src/js/script.js"></script>
 </body>
-<script src="src/js/js.js"></script>
-<script src="src/js/localStorage.js"></script>
 </html>
