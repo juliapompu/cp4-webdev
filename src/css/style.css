@@ -8,8 +8,7 @@ body {
   text-align: center;
   color: aliceblue;
   background-color: rgb(76, 198, 255);
-  width: auto;
-
+  padding: 40px;
 }
 
 form {
@@ -47,6 +46,7 @@ input, button, select {
 }
 
 .card .favorita {
+  width: 200px;
   color: gold;
   cursor: pointer;
 }

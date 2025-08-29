@@ -13,7 +13,7 @@ const inicialJogadoras = [
     nome: "Dayana Rodríguez",
     posicao: "Meio-campo",
     clube: "Corinthians",
-    foto: "https://example.com/dayana.jpg",
+    foto: "https://cdn.meutimao.com.br/_upload/jogador/dayana-lisset-rodriguez-leon-no-corinthians_a.jpg",
     gols: 5,
     assistencias: 12,
     jogos: 30,
@@ -23,7 +23,7 @@ const inicialJogadoras = [
     nome: "Mariza",
     posicao: "Zagueira",
     clube: "Corinthians",
-    foto: "https://example.com/mariza.jpg",
+    foto: "https://tse4.mm.bing.net/th/id/OIP.yEd37VAkw4G0TqCKZ_QWzAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     gols: 2,
     assistencias: 1,
     jogos: 32,
@@ -33,7 +33,7 @@ const inicialJogadoras = [
     nome: "Thaís Regina",
     posicao: "Zagueira",
     clube: "Corinthians",
-    foto: "https://example.com/thais.jpg",
+    foto: "https://cdn.meutimao.com.br/_upload/jogador/thais-regina-da-silva-no-corinthians_z.jpg",
     gols: 1,
     assistencias: 2,
     jogos: 25,
@@ -43,13 +43,25 @@ const inicialJogadoras = [
     nome: "Letícia Teles",
     posicao: "Zagueira",
     clube: "Corinthians",
-    foto: "https://example.com/leticia.jpg",
+    foto: "https://cdn.meutimao.com.br/_upload/jogador/leticia-teles-da-silva-no-corinthians_xt.jpg",
     gols: 0,
     assistencias: 0,
     jogos: 18,
     favorita: false
+  },
+  {
+    nome: "Tamires",
+    posicao:"lateral-esqeurda",
+    clube:"Corinthians",
+    foto:"https://cdn.meutimao.com.br/_upload/noticia/2021/12/31/tamires-posa-com-a-taca-da-libertadores-da-1k941w.jpg",
+    gols: 2,
+    assistencias: 2,
+    jogos: 22,
+    favorita: false
   }
 ];
+
+
 
 if (!localStorage.getItem("jogadoras")) {
   localStorage.setItem("jogadoras", JSON.stringify(inicialJogadoras));
@@ -81,7 +93,7 @@ function renderJogadoras(filtro = "") {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
-      ${j.foto}
+      <img src=${j.foto}/>
       <h3>${j.nome}</h3>
       <p>${j.posicao} - ${j.clube}</p>
       <p>Gols: ${j.gols} | Assistências: ${j.assistencias} | Jogos: ${j.jogos}</p>
