@@ -9,6 +9,9 @@ body {
   color: aliceblue;
   background-color: rgb(76, 198, 255);
   padding: 40px;
+  width:100%;
+  margin: auto;
+  font-size: 45px;
 }
 
 form {
@@ -40,8 +43,9 @@ input, button, select {
   text-align: center;
 }
 
+
 .card img {
-  width: 100%;
+  width: 180px;
   border-radius: 8px;
 }
 
