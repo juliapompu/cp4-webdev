@@ -3,9 +3,7 @@ const inicialJogadoras = [
     nome: "Andressa Alves",
     posicao: "Meio-campo",
     clube: "Corinthians",
-
-    foto: "https://example.com/andressa.jpg",
-
+    foto: "src/assets/AndressaAlves.jpg",
     gols: 15,
     assistencias: 10,
     jogos: 28,

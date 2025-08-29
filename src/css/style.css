@@ -1,12 +1,11 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #e4e3e3;
+body{
+  background-color: whitesmoke;
 }
 
-#cabecario h1{
+#jogadora-form button{
+  width: 80px;
+  background-color: #93efff;
   text-align: center;
-  color: aliceblue;
   background-color: rgb(76, 198, 255);
   padding: 40px;
 }
@@ -17,12 +16,9 @@ form {
   gap: 10px;
   justify-content: center;
   margin-bottom: 20px;
+
 }
 
-input, button, select {
-  padding: 10px;
-  font-size: 16px;
-}
 
 #jogadoras-container {
   display: flex;
