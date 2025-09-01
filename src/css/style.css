@@ -40,6 +40,7 @@ input, button, select {
   border-radius: 8px;
   width: 250px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  height: 500px;
   text-align: center;
 }
 
@@ -47,6 +48,18 @@ input, button, select {
 .card img {
   width: 180px;
   border-radius: 8px;
+  max-height: 290px;
+}
+
+.card .foto-container {
+  width: 180px;
+  height: 290px;
+  max-height: 290px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .card .favorita {

@@ -72,7 +72,6 @@ function getJogadoras() {
 }
 
 function salvarJogadoras(jogadoras) {
-  debugger;
   localStorage.setItem("jogadoras", JSON.stringify(jogadoras));
 }
 
@@ -94,7 +93,9 @@ function renderJogadoras(filtro = "") {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
-      <img src=${j.foto}/>
+      <div class="foto-container">
+        <img src=${j.foto}/>
+      </div>
       <h3>${j.nome}</h3>
       <p>${j.posicao} - ${j.clube}</p>
       <p>Gols: ${j.gols} | Assistências: ${j.assistencias} | Jogos: ${j.jogos}</p>
