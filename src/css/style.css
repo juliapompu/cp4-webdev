@@ -42,8 +42,12 @@ input, button, select {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   height: 500px;
   text-align: center;
+  
 }
 
+.card h3, .card p, .card span, .card button{
+  justify-content: end;
+}
 
 .card img {
   width: 180px;
