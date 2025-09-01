@@ -1,15 +1,18 @@
 body {
   font-family: Arial, sans-serif;
-  padding: 20px;
   background: #e4e3e3;
 }
 
-#cabecario h1{
+#cabecario{
+  padding: 40px;
+  background-color: rgb(76, 198, 255);
+  margin: -10px;
+
+}
+
+#cabecario .cabecario-texto h1{
   text-align: center;
   color: aliceblue;
-  background-color: rgb(76, 198, 255);
-  padding: 40px;
-  width:100%;
   margin: auto;
   font-size: 45px;
 }
@@ -67,7 +70,7 @@ input, button, select {
 }
 
 .card .favorita {
-  width: 200px;
+  width: 100%;
   color: gold;
   cursor: pointer;
 }

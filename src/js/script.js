@@ -13,7 +13,7 @@ const inicialJogadoras = [
     nome: "Dayana Rodríguez",
     posicao: "Meio-campo",
     clube: "Corinthians",
-    foto: "https://static.corinthians.com.br/uploads/1750945261a0833c8a1817526ac555f8d67727caf6.png",
+    foto:"https://static.corinthians.com.br/uploads/1750945261a0833c8a1817526ac555f8d67727caf6.png",
     gols: 5,
     assistencias: 12,
     jogos: 30,
