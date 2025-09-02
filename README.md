@@ -20,6 +20,7 @@ Depois de cadastrar todas essa informações sua foto e infos apareceram no pain
 
 ## Github Pages
 
+---
 
 ## 🛠️ Funcionalidades
 - ✅ Página principal com os campos de cadastro
@@ -30,8 +31,8 @@ Depois de cadastrar todas essa informações sua foto e infos apareceram no pain
 
 ---
 
-# Arquitetura
-- 📁 src
+## 📐 Arquitetura
+ # 📁 src
    - ┣ 📁 assets (imagens e ícones)
    - ┣ 📁 css (estilos)
    - ┣ 📁 js (scripts JavaScript)
