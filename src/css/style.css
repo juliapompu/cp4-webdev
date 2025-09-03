@@ -1,11 +1,11 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #e4e3e3;
+  font-family: georgia, sans-serif;
+  background: #eaeeee;
 }
 
 #cabecario{
   padding: 40px;
-  background-color: rgb(76, 198, 255);
+  background-color: rgb(63, 164, 211);
   margin: -10px;
 
 }
@@ -28,6 +28,7 @@ form {
 input, button, select {
   padding: 10px;
   font-size: 16px;
+   border-radius: 5px;
 }
 
 #jogadoras-container {
@@ -38,7 +39,7 @@ input, button, select {
 }
 
 .card {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 8px;
   width: 250px;
@@ -74,3 +75,5 @@ input, button, select {
   color: gold;
   cursor: pointer;
 }
+
+
