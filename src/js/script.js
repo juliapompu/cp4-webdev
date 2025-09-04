@@ -38,7 +38,7 @@ function renderJogadoras(filtro = "") {
     card.className = "card";
     card.innerHTML = `
       <div class="foto-container">
-        <img src=${j.foto}/>
+        <img src=${j.foto}>
       </div>
       <h3>${j.nome}</h3>
       <p>${j.posicao} - ${j.clube}</p>
