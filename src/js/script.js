@@ -1,3 +1,4 @@
+// Carrega os dados do json no localStorage
 if (!localStorage.getItem("jogadoras")) {
   fetch('jogadoras.json')
     .then(response => response.json())
@@ -17,6 +18,7 @@ function salvarJogadoras(jogadoras) {
   localStorage.setItem("jogadoras", JSON.stringify(jogadoras));
 }
 
+// READ
 function renderJogadoras(filtro = "") {
   const container = document.getElementById("jogadoras-container");
   container.innerHTML = "";
@@ -36,7 +38,7 @@ function renderJogadoras(filtro = "") {
     card.className = "card";
     card.innerHTML = `
       <div class="foto-container">
-        <img src=${j.foto}/>
+        <img src=${j.foto}>
       </div>
       <h3>${j.nome}</h3>
       <p>${j.posicao} - ${j.clube}</p>
@@ -72,6 +74,7 @@ function toggleFavorita(index) {
   renderJogadoras();
 }
 
+// DELETE
 function removerJogadora(index) {
   const jogadoras = getJogadoras();
   jogadoras.splice(index, 1);
@@ -80,6 +83,7 @@ function removerJogadora(index) {
   renderJogadoras();
 }
 
+// EDIT
 function editarJogadora(index) {
   const j = getJogadoras()[index];
   document.getElementById("edit-index").value = index;
@@ -92,6 +96,7 @@ function editarJogadora(index) {
   document.getElementById("foto").value = j.foto;
 }
 
+// CREATE
 document.getElementById("jogadora-form").addEventListener("submit", function(e) {
   e.preventDefault();
   const nome = document.getElementById("nome").value;
