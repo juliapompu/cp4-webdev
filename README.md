@@ -9,18 +9,19 @@
 ## 📜 Descrição do Projeto
 "Twetoo" é o projeto de uma nova rede de cadastros de jogadoras de futebol feminino. No cadastro contém 7 campos:
   - Nome,
-  -  Posição,
-  -  Clube,
-  -  Gols,
-  -  Assistências,
-  -  Jogos
-  -   URL da foto de perfil;
+  - Posição,
+  - Clube,
+  - Gols,
+  - Assistências,
+  - Jogos
+  - URL da foto de perfil;
 
 Depois de cadastrar todas essa informações sua foto e infos apareceram no painel de jogadoras abaixo, e nesse painel, poderá pesquisar por jogadoras específicas e pode aplicar filtros como: "Ordenar pelo Nome" ou "Ordenar por posição". Outro tipo de filtro que temos no nosso site é pesquisa por times, podendo separar as jogadoras por times cadastrados.
 
 
 ## Github Pages
-
+ https://juliapompu.github.io/cp4-webdev/
+ 
 ---
 
 ## 🛠️ Funcionalidades
@@ -38,6 +39,7 @@ Depois de cadastrar todas essa informações sua foto e infos apareceram no pain
   - ┣ 📁 css (estilos)
   - ┣ 📁 js (scripts JavaScript)
 - 📄 index.html (página principal)
+- jogadoras.JSON
 
   ---
 
